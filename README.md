@@ -51,7 +51,7 @@ Dev dependencies: `pytest`, `httpx`, `ruff`, `bandit`, `pip-audit`
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/yourusername/sentinelsync.git
+git clone https://github.com/omarallam-ai/SentinelSync.git
 cd sentinelsync
 
 # 2. Create and activate a virtual environment
