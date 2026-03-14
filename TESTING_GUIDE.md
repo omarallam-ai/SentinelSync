@@ -26,7 +26,7 @@ SENTINELSYNC_LOG_LEVEL=INFO
 sentinelsync ingest --text "Suspicious IP 185.220.101.47 contacted http://malware-cdn.biz/payload/dropper.exe and domain evil-phish.net hash 3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c"
 ```
 
-**Expected output:**
+**Example output:**
 ```
 Extracted: 5
 Inserted:  5
@@ -43,7 +43,7 @@ Save `sample_threat_data.txt` somewhere, then:
 sentinelsync ingest --file sample_threat_data.txt
 ```
 
-**Expected output:**
+**Example output:**
 ```
 Extracted: ~18
 Inserted:  ~13   (some already exist from Step 1 → deduped)
