@@ -1,0 +1,17 @@
+pyproject.toml
+app/cli/main.py
+app/core/config.py
+app/core/logging.py
+app/db/models.py
+app/db/repo.py
+app/db/session.py
+app/domain/types.py
+app/services/extract.py
+app/services/ingest.py
+app/services/normalize.py
+sentinelsync.egg-info/PKG-INFO
+sentinelsync.egg-info/SOURCES.txt
+sentinelsync.egg-info/dependency_links.txt
+sentinelsync.egg-info/entry_points.txt
+sentinelsync.egg-info/requires.txt
+sentinelsync.egg-info/top_level.txt

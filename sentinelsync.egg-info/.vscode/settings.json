@@ -1,0 +1,7 @@
+{
+  // Ignore Tailwind at-rules and apply directives in CSS/SCSS files
+  "css.lint.unknownAtRules": "ignore",
+  "scss.lint.unknownAtRules": "ignore",
+  "css.validate": true,
+  "scss.validate": true
+}
