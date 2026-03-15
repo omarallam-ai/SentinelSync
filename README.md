@@ -279,4 +279,4 @@ Built as a portfolio project demonstrating SOC-adjacent engineering: defensive t
 
 ## Methodology Note
 
-All data enrichment, URL and IP investigations, and threat analysis were conducted manually using SentinelSync tools. AI assistance was used solely to organize, structure, and format the final documentation.
+All data enrichment, URL/IP investigations, and threat analysis were performed manually using SentinelSync. AI assistance was used only to plan the project, write tests, add comments, and produce well-structured, polished documentation.
