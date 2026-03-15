@@ -271,12 +271,6 @@ sentinelsync/
 
 ---
 
-## License
-
-MIT License — see [LICENSE](LICENSE) for details.
-
----
-
 ## Author
 
 Built as a portfolio project demonstrating SOC-adjacent engineering: defensive tooling, clean architecture, and production-grade practices on a Windows-first stack.
