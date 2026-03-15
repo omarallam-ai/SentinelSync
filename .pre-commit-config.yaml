@@ -1,15 +1,29 @@
+# .pre-commit-config.yaml
 repos:
+  # General-purpose hooks
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.6.0
     hooks:
-      - id: end-of-file-fixer
-      - id: trailing-whitespace
-      - id: check-yaml
-      - id: check-added-large-files
+      - id: end-of-file-fixer         # Ensure files end with a newline
+      - id: trailing-whitespace       # Remove trailing spaces
+      - id: check-yaml                # Validate YAML syntax
+      - id: check-added-large-files   # Prevent huge files from being committed
 
+  # Code formatting & linting
   - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.5.7
     hooks:
       - id: ruff
-        args: [--fix]
-      - id: ruff-format
+        args: [--fix]                 # Auto-fix simple issues
+      - id: ruff-format                # Ensure consistent formatting
+
+  # Security checks
+  - repo: https://github.com/pre-commit/mirrors-bandit
+    rev: v1.7.5
+    hooks:
+      - id: bandit                      # Scan Python code for security issues
+
+  - repo: https://github.com/pypa/pip-audit
+    rev: v2.5.0
+    hooks:
+      - id: pip-audit                   # Scan dependencies for known vulnerabilities
