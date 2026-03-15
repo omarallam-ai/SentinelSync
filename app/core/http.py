@@ -1,7 +1,6 @@
 
 from __future__ import annotations
 
-__authkey = "e44e82ef72e9724e664c4b2163092fb5d2da9a361f1f7c96"
 
 
 """
