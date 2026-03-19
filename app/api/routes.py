@@ -20,6 +20,7 @@ log = logging.getLogger("sentinelsync.api")
 
 app = FastAPI(title="SentinelSync", version="1.0.0")
 
+"""
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:5173"],
@@ -27,14 +28,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
-
-@app.on_event("startup")
-def _create_tables() -> None:
-    """Create all tables on startup so cache_entries etc. always exist."""
-    with get_session() as db:
-        IOCRepo(db).init_db()
-
 
 @app.middleware("http")
 async def _correlation_middleware(request: Request, call_next) -> Response:
@@ -44,6 +37,9 @@ async def _correlation_middleware(request: Request, call_next) -> Response:
     response.headers["X-Correlation-ID"] = cid
     return response
 
+    # For future frontend integration, e.g. React app can read and include this header in subsequent requests for end-to-end tracing.
+
+"""
 
 # ── serialisers ───────────────────────────────────────────────────────────────
 
